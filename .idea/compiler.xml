@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="platform-cloud-service-power" />
+        <module name="platform-cloud-service-order" />
+        <module name="platform-cloud-api" />
+        <module name="platform-cloud-service-payment" />
+        <module name="platform-cloud-gateway" />
+        <module name="platform-cloud-common" />
+        <module name="platform-cloud-service-file" />
+        <module name="platform-cloud-springbootadmin" />
+        <module name="platform-cloud-api (1)" />
+        <module name="platform-cloud-service-base" />
+        <module name="platform-cloud-service-settle" />
+        <module name="platform-cloud-service-user" />
+        <module name="platform-cloud-service-access" />
+        <module name="platform-cloud-configure" />
+        <module name="platform-cloud-service-message" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="glcxw-cloud" target="1.8" />
+      <module name="platform-cloud-api" target="1.8" />
+      <module name="platform-cloud-api (1)" target="1.8" />
+      <module name="platform-cloud-base" target="1.8" />
+      <module name="platform-cloud-common" target="1.8" />
+      <module name="platform-cloud-configure" target="1.8" />
+      <module name="platform-cloud-gateway" target="1.8" />
+      <module name="platform-cloud-service-access" target="1.8" />
+      <module name="platform-cloud-service-base" target="1.8" />
+      <module name="platform-cloud-service-file" target="1.8" />
+      <module name="platform-cloud-service-message" target="1.8" />
+      <module name="platform-cloud-service-order" target="1.8" />
+      <module name="platform-cloud-service-payment" target="1.8" />
+      <module name="platform-cloud-service-power" target="1.8" />
+      <module name="platform-cloud-service-settle" target="1.8" />
+      <module name="platform-cloud-service-user" target="1.8" />
+      <module name="platform-cloud-springbootadmin" target="1.8" />
+      <module name="platfrom-cloud-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="glcxw-cloud" options="" />
+      <module name="platform-cloud-api" options="-parameters" />
+      <module name="platform-cloud-api (1)" options="-parameters" />
+      <module name="platform-cloud-base" options="-parameters" />
+      <module name="platform-cloud-common" options="-parameters" />
+      <module name="platform-cloud-configure" options="-parameters" />
+      <module name="platform-cloud-gateway" options="-parameters" />
+      <module name="platform-cloud-service-access" options="-parameters" />
+      <module name="platform-cloud-service-base" options="-parameters" />
+      <module name="platform-cloud-service-file" options="-parameters" />
+      <module name="platform-cloud-service-message" options="-parameters" />
+      <module name="platform-cloud-service-order" options="-parameters" />
+      <module name="platform-cloud-service-payment" options="-parameters" />
+      <module name="platform-cloud-service-power" options="-parameters" />
+      <module name="platform-cloud-service-settle" options="-parameters" />
+      <module name="platform-cloud-service-user" options="-parameters" />
+      <module name="platform-cloud-springbootadmin" options="-parameters" />
+      <module name="platfrom-cloud-api" options="-parameters" />
+    </option>
+  </component>
+</project>

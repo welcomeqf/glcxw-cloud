@@ -1,0 +1,16 @@
+server:
+  port: 8006
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: glcxw-cloud-pay
+
+logging:
+  file:
+    max-size: 500MB
+    max-history: 7
+    path: logs/${spring.application.name}
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-api/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-common/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-configure/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-user/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-base/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-order/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-pay/pom.xml" />
+        <option value="$PROJECT_DIR$/platform-message/pom.xml" />
+        <option value="$PROJECT_DIR$/platfrom-cloud-service-file/pom.xml" />
+        <option value="$PROJECT_DIR$/platfrom-cloud-service-power/pom.xml" />
+        <option value="$PROJECT_DIR$/platfrom-cloud-service-access/pom.xml" />
+        <option value="$PROJECT_DIR$/platfrom-cloud-service-settle/pom.xml" />
+        <option value="$PROJECT_DIR$/platfrom-cloud-springbootadmin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="https://42.49.141.68:8001/svn/project/PJ-202124-GLCXW/02_代码区/cloud/glcxw-cloud" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

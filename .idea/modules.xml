@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/glcxw-cloud.iml" filepath="$PROJECT_DIR$/glcxw-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-api/platform-cloud-api.iml" filepath="$PROJECT_DIR$/platform-cloud-api/platform-cloud-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-api/platform-cloud-api (1).iml" filepath="$PROJECT_DIR$/platform-cloud-api/platform-cloud-api (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-common/platform-cloud-common.iml" filepath="$PROJECT_DIR$/platform-cloud-common/platform-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-configure/platform-cloud-configure.iml" filepath="$PROJECT_DIR$/platform-cloud-configure/platform-cloud-configure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-gateway/platform-cloud-gateway.iml" filepath="$PROJECT_DIR$/platform-cloud-gateway/platform-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-access/platform-cloud-service-access.iml" filepath="$PROJECT_DIR$/platform-cloud-service-access/platform-cloud-service-access.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-base/platform-cloud-service-base.iml" filepath="$PROJECT_DIR$/platform-cloud-service-base/platform-cloud-service-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-file/platform-cloud-service-file.iml" filepath="$PROJECT_DIR$/platform-cloud-service-file/platform-cloud-service-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-message/platform-cloud-service-message.iml" filepath="$PROJECT_DIR$/platform-cloud-service-message/platform-cloud-service-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-order/platform-cloud-service-order.iml" filepath="$PROJECT_DIR$/platform-cloud-service-order/platform-cloud-service-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-payment/platform-cloud-service-payment.iml" filepath="$PROJECT_DIR$/platform-cloud-service-payment/platform-cloud-service-payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-power/platform-cloud-service-power.iml" filepath="$PROJECT_DIR$/platform-cloud-service-power/platform-cloud-service-power.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-settle/platform-cloud-service-settle.iml" filepath="$PROJECT_DIR$/platform-cloud-service-settle/platform-cloud-service-settle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-service-user/platform-cloud-service-user.iml" filepath="$PROJECT_DIR$/platform-cloud-service-user/platform-cloud-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-cloud-springbootadmin/platform-cloud-springbootadmin.iml" filepath="$PROJECT_DIR$/platform-cloud-springbootadmin/platform-cloud-springbootadmin.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,102 @@
+server:
+  port: 8000
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: platform-cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: www.xiaofeizhu.vip:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: base_route
+          uri: lb://platform-cloud-base
+          predicates:
+            - Path=/service-base/**
+          filters:
+            - RewritePath=/service-base/(?<segment>.*),/$\{segment}
+
+        - id: user_route
+          uri: lb://platform-cloud-service-user
+          predicates:
+            - Path=/service-user/**
+          filters:
+            - RewritePath=/service-user/(?<segment>.*),/$\{segment}
+
+        - id: order_route
+          uri: lb://platform-cloud-service-order
+          predicates:
+            - Path=/service-order/**
+          filters:
+            - RewritePath=/service-order/(?<segment>.*),/$\{segment}
+
+        - id: pay_route
+          uri: lb://platform-cloud-service-payment
+          predicates:
+            - Path=/service-payment/**
+          filters:
+            - RewritePath=/service-payment/(?<segment>.*),/$\{segment}
+
+        - id: message_route
+          uri: lb://platform-cloud-service-message
+          predicates:
+            - Path=/service-message/**
+          filters:
+            - RewritePath=/service-message/(?<segment>.*),/$\{segment}
+
+        - id: file_route
+          uri: lb://platform-cloud-service-file
+          predicates:
+            - Path=/service-file/**
+          filters:
+            - RewritePath=/service-file/(?<segment>.*),/$\{segment}
+
+        - id: power_route
+          uri: lb://platform-cloud-service-power
+          predicates:
+            - Path=/service-power/**
+          filters:
+            - RewritePath=/service-power/(?<segment>.*),/$\{segment}
+
+        - id: access_route
+          uri: lb://platform-cloud-service-access
+          predicates:
+            - Path=/service-access/**
+          filters:
+            - RewritePath=/service-access/(?<segment>.*),/$\{segment}
+
+        - id: settle_route
+          uri: lb://platform-cloud-service-settle
+          predicates:
+            - Path=/service-settle/**
+          filters:
+            - RewritePath=/service-settle/(?<segment>.*),/$\{segment}
+
+        - id: springboot_admin_route
+          uri: lb://platform-cloud-springbootadmin
+          predicates:
+            - Path=/service-springboot-admin/**
+          filters:
+            - RewritePath=/service-springboot-admin/(?<segment>.*),/$\{segment}
+
+logging:
+  file:
+    max-size: 500MB
+    max-history: 7
+    path: logs/${spring.application.name}
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: platform-cloud-base,platform-cloud-service-user,platform-cloud-service-order,
+      platform-cloud-service-payment,platform-cloud-service-message,platform-cloud-service-file,
+      platform-cloud-service-power,platform-cloud-service-access,platform-cloud-service-settle,
+      platform-cloud-springbootadmin
+

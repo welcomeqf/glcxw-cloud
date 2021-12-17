@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.glcxw.avatar</groupId>
+    <artifactId>glcxw-cloud</artifactId>
+    <version>1.0.0</version>
+    <name>glcxw-cloud</name>
+    <description>桂林出行网-服务/云端</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>platform-cloud-api</module>
+        <module>platform-cloud-common</module>
+        <module>platform-cloud-configure</module>
+        <module>platform-cloud-gateway</module>
+        <module>platform-cloud-service-message</module>
+        <module>platform-cloud-service-order</module>
+        <module>platform-cloud-service-payment</module>
+        <module>platform-cloud-service-user</module>
+        <module>platform-cloud-service-access</module>
+        <module>platform-cloud-service-base</module>
+        <module>platform-cloud-service-file</module>
+        <module>platform-cloud-service-power</module>
+        <module>platform-cloud-service-settle</module>
+        <module>platform-cloud-springbootadmin</module>
+    </modules>
+
+    <properties>
+        <java_version>1.8</java_version>
+        <mysql_vsersion>8.0.25</mysql_vsersion>
+        <cloud_platform>1.0.0</cloud_platform>
+        <spring_cloud_version>Hoxton.SR3</spring_cloud_version>
+        <org_spring_cloud_alibaba_version>2.2.1.RELEASE</org_spring_cloud_alibaba_version>
+        <org_slf4j_api_version>1.7.25</org_slf4j_api_version>
+        <io_jsonwebtoken_jjwt_version>0.9.1</io_jsonwebtoken_jjwt_version>
+        <http_client_version>4.5.6</http_client_version>
+        <http_core_version>4.4.3</http_core_version>
+        <fastjson_version>1.2.72</fastjson_version>
+        <logstash_version>5.3</logstash_version>
+        <wxpay_sdk_version>3.0.9</wxpay_sdk_version>
+        <alipay_sdk_version>4.8.103.ALL</alipay_sdk_version>
+        <commons-lang3_version>3.12.0</commons-lang3_version>
+        <org_projectlombok_lombok_version>1.18.0</org_projectlombok_lombok_version>
+        <mybatis_plus_boot_starter_version>3.0.5</mybatis_plus_boot_starter_version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- cloud-api-版本 -->
+            <dependency>
+                <groupId>com.glcxw.avatar</groupId>
+                <artifactId>platform-cloud-api</artifactId>
+                <version>${cloud_platform}</version>
+            </dependency>
+            <!-- cloud-common-版本 -->
+            <dependency>
+                <groupId>com.glcxw.avatar</groupId>
+                <artifactId>platform-cloud-common</artifactId>
+                <version>${cloud_platform}</version>
+            </dependency>
+            <!-- cloud-configure-版本 -->
+            <dependency>
+                <groupId>com.glcxw.avatar</groupId>
+                <artifactId>platform-cloud-configure</artifactId>
+                <version>${cloud_platform}</version>
+            </dependency>
+            <!-- Spring-Cloud-版本 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring_cloud_version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring cloud alibaba 依赖管理 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${org_spring_cloud_alibaba_version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- mybatis-plus-spring-boot-starter 依赖管理 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis_plus_boot_starter_version}</version>
+            </dependency>
+            <!-- slf4j 依赖管理 -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${org_slf4j_api_version}</version>
+            </dependency>
+            <!-- lombok 依赖管理 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org_projectlombok_lombok_version}</version>
+            </dependency>
+            <!-- jwt 依赖管理 -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${io_jsonwebtoken_jjwt_version}</version>
+            </dependency>
+            <!-- httpClient 依赖 -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${http_client_version}</version>
+            </dependency>
+            <!-- httpCore 依赖-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${http_core_version}</version>
+            </dependency>
+            <!-- alibaba-fastjson 依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson_version}</version>
+            </dependency>
+            <!-- Logstash 日志依赖 -->
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash_version}</version>
+            </dependency>
+            <!-- mysql 连接驱动依赖 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql_vsersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3_version}</version>
+            </dependency>
+            <!-- 微信支付 SDK -->
+            <dependency>
+                <groupId>com.github.tedzhdz</groupId>
+                <artifactId>wxpay-sdk</artifactId>
+                <version>${wxpay_sdk_version}</version>
+            </dependency>
+            <!-- 支付宝支付 SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay_sdk_version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>    <!--默认关掉单元测试 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

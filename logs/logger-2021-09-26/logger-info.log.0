@@ -1,0 +1,28 @@
+2021-09-26 19:12:51.952 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder -Ignore the empty nacos configuration and get it based on dataId[glcxw-cloud-message] & group[DEFAULT_GROUP]
+2021-09-26 19:12:52.006 [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder -Ignore the empty nacos configuration and get it based on dataId[glcxw-cloud-message-sit.yml] & group[DEFAULT_GROUP]
+2021-09-26 19:12:52.008 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration -Located property source: [BootstrapPropertySource {name='bootstrapProperties-glcxw-cloud-message-sit.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-glcxw-cloud-message.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-glcxw-cloud-message,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-application.yml,DEFAULT_GROUP'}]
+2021-09-26 19:12:52.066 [main] INFO  com.glcxw.avatar.MessageApplication -The following profiles are active: sit
+2021-09-26 19:12:52.407 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.glcxw.*.mapper]' package. Please check your configuration.
+2021-09-26 19:12:52.515 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.glcxw.avatar]' package. Please check your configuration.
+2021-09-26 19:12:52.552 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-26 19:12:52.554 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-26 19:12:52.576 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2021-09-26 19:12:52.737 [main] INFO  o.s.cloud.context.scope.GenericScope -BeanFactory id=72d3f90b-4cc3-315b-b79f-bc22b4c18d3e
+2021-09-26 19:12:52.799 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'com.glcxw.avatar.pay.PayFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-26 19:12:53.069 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8005 (http)
+2021-09-26 19:12:53.181 [main] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1097 ms
+2021-09-26 19:12:53.808 [main] WARN  c.n.c.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2021-09-26 19:12:53.808 [main] INFO  c.n.c.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-09-26 19:12:53.812 [main] WARN  c.n.c.sources.URLConfigurationSource -No URLs will be polled as dynamic configuration sources.
+2021-09-26 19:12:53.812 [main] INFO  c.n.c.sources.URLConfigurationSource -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-09-26 19:12:53.930 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-26 19:12:55.508 [main] INFO  o.s.cloud.commons.util.InetUtils -Cannot determine local hostname
+2021-09-26 19:12:55.522 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler -Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-09-26 19:12:55.646 [main] INFO  com.zaxxer.hikari.HikariDataSource -MyHikariCP - Starting...
+2021-09-26 19:12:56.021 [main] INFO  com.zaxxer.hikari.HikariDataSource -MyHikariCP - Start completed.
+2021-09-26 19:12:57.628 [main] INFO  o.s.cloud.commons.util.InetUtils -Cannot determine local hostname
+2021-09-26 19:12:57.728 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8005 (http) with context path ''
+2021-09-26 19:12:57.790 [main] INFO  c.a.c.n.r.NacosServiceRegistry -nacos registry, DEFAULT_GROUP platform-cloud-service-message 172.18.20.153:8005 register finished
+2021-09-26 19:12:59.276 [main] INFO  o.s.cloud.commons.util.InetUtils -Cannot determine local hostname
+2021-09-26 19:12:59.282 [main] INFO  com.glcxw.avatar.MessageApplication -Started MessageApplication in 11.48 seconds (JVM running for 12.421)
+2021-09-26 19:12:59.298 [main] INFO  com.glcxw.avatar.MessageApplication -message service start success

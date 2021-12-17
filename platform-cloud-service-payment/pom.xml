@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>glcxw-cloud</artifactId>
+        <groupId>com.glcxw.avatar</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>platform-cloud-service-payment</artifactId>
+    <description>glcxw project for platform-pay</description>
+
+    <properties>
+        <current_project_name>platform-cloud-service-payment</current_project_name>
+        <spring_boot_start_class>com.glcxw.avatar.PayApplication</spring_boot_start_class>
+    </properties>
+
+    <dependencies>
+        <!-- cloud-api-版本 -->
+        <dependency>
+            <groupId>com.glcxw.avatar</groupId>
+            <artifactId>platform-cloud-api</artifactId>
+        </dependency>
+        <!-- cloud-common-版本 -->
+        <dependency>
+            <groupId>com.glcxw.avatar</groupId>
+            <artifactId>platform-cloud-common</artifactId>
+        </dependency>
+        <!-- cloud-configure-版本 -->
+        <dependency>
+            <groupId>com.glcxw.avatar</groupId>
+            <artifactId>platform-cloud-configure</artifactId>
+        </dependency>
+        <!-- spring cloud 依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!-- mysql 连接驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${current_project_name}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>${spring_boot_start_class}</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: glcxw-cloud-access
+
+logging:
+  file:
+    max-size: 500MB
+    max-history: 7
+    path: logs/${spring.application.name}

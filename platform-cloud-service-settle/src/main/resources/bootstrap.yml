@@ -1,0 +1,14 @@
+server:
+  port: 8008
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: glcxw-cloud-settle
+
+logging:
+  file:
+    max-size: 500MB
+    max-history: 7
+    path: logs/${spring.application.name}
